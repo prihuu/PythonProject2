@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 3</title>
+</head>
+<body>
+<p id="output"></p>
+<script>
+    //prompt for 3 integers
+    const num1 = parseInt(prompt("Enter the first integer:"));
+    const num2 = parseInt(prompt("Enter the second integer:"));
+    const num3 = parseInt(prompt("Enter the third integer:"));
+
+    //calculate sum, product and average
+    const sum = num1 + num2 + num3;
+    const product = num1 * num2 + num3;
+    const average = sum / 3;
+
+    //results
+    document.getElementById("output").innerHTML =
+        "Sum: " + sum + "<br>" +
+        "Product: " + product + "<br>" +
+        "Average: " + average;
+    
+</script>
+
+</body>
+</html>

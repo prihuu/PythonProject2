@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 7</title>
+</head>
+<body>
+<p id="result"></p>
+
+<script>
+    //asking user for dice roll amount
+    const rolls = parseInt(prompt("How many dice do you want to roll?"));
+    let sum = 0;
+
+    //roll the dice
+    for (let i = 0; i < rolls; i++) {
+        const roll = Math.floor(Math.random() * 6) + 1;
+        sum += roll;
+    }
+
+    //results
+    document.getElementById("result").textContent =
+        "Sum of " + rolls + " dice rolls:" + sum;
+</script>
+</body>
+</html>
