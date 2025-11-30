@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 4</title>
+</head>
+<body>
+<script>
+    const numbers = [];
+    let input;
+
+    do {
+        input = parseFloat(prompt("Enter number (0 to stop)"));
+        if (input !== 0 && !isNaN(input)) {
+            numbers.push(input);
+        }
+    } while (input !== 0);
+
+    numbers.sort((a, b) => b - a);
+
+    console.log("Numbers from largest to smallest:");
+    for (let num of numbers) {
+        console.log(num);
+    }
+</script>
+
+</body>
+</html>

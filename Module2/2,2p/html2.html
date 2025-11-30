@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 2</title>
+</head>
+<body>
+<ol id="participants"></ol>
+<script>
+    const count = parseInt(prompt("How many participants?"));
+    const names = [];
+
+    for (let i = 0; i < count; i++) {
+        const name = prompt("Enter name of participant " + (i + 1) + ":");
+        names.push(name);
+    }
+
+    names.sort();
+
+    const list = document.getElementById("participants");
+    for (let i = 0; i < names.length; i++) {
+        const li = document.createElement("li");
+        li.textContent = names[i];
+        list.appendChild(li);
+    }
+</script>
+</body>
+</html>

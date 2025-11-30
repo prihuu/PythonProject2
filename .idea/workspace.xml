@@ -4,22 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3661d073-0d18-4bbf-92d8-e98f362ce7ef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PythonProject2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/1,1p/html1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/1,1p/js1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/2,2p/hmtl2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/2,2p/js2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/3,3p/html3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/3,3p/js3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/5,3p/html5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/5,3p/js5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/7,2p/hmtl7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/7,2p/js7.js" afterDir="false" />
+    <list default="true" id="3661d073-0d18-4bbf-92d8-e98f362ce7ef" name="Changes" comment="module1">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/1,2p/html1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/1,2p/js1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/2,2p/html2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/2,2p/js2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/3,2p/html3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/3,2p/js3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/4,2p/html4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/4,2p/js4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/5,2p/html5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/5,2p/js5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +34,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "prihuu"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/prihuu/PythonProject2.git",
+    "accountId": "2c885bae-dacc-4da8-80ac-62fdbd2ba333"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 6
 }]]></component>
@@ -47,20 +56,32 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/awahn/PythonProject2/Module2/1,2p",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory",
+      "repository"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\awahn\PythonProject2\Module2\1,2p" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\awahn\PythonProject2\Module1\1,1p" />
     </key>
@@ -80,11 +101,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1764198035015</updated>
-      <workItem from="1764198036099" duration="7285000" />
+      <workItem from="1764198036099" duration="12386000" />
     </task>
+    <task id="LOCAL−00001" summary="module1">
+      <option name="closed" value="true" />
+      <created>1764527799046</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1764527799046</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="module1" />
+    <option name="LAST_COMMIT_MESSAGE" value="module1" />
   </component>
 </project>
