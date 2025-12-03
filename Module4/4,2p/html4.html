@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Search App</title>
+
+    <style>
+        .show-card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: 220px;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 210px;
+            height: 290px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>TV Series Search (TVMaze)</h1>
+
+    <form id="tvForm">
+        <input id="tvQuery" type="text" placeholder="Enter TV Series Name Here">
+        <input type="submit" value="Submit">
+    </form>
+
+    <section id="tvResults"></section>
+
+    <h1>Chuck Norris Joke Search</h1>
+
+    <form id="chuckForm">
+        <input id="jokeQuery" type="text" placeholder="Enter a keyword Here">
+        <input type="submit" value="Search Jokes">
+    </form>
+
+    <section id="jokeResults"></section>
+
+<script>
+
+    const tvForm = document.getElementById('tvForm');
+    const tvResults = document.getElementById('tvResults');
+
+    tvForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const query = document.getElementById('tvQuery').value.trim();
+        if (!query) return;
+
+        tvResults.innerHTML = "";
+
+        fetch(`https://api.tvmaze.com/search/shows?q=${encodeURIComponent(query)}")
+            .then(res => res.json())
+            .then(data => {
+                data.forEach(item => {
+                    const show = item.show;
+
+                    const imgUr1 = show.image && show.image.medium
+                        ? show.image.medium
+                        : "https://placehold.co/210x295?text=Not%20Found"
+
+                    const card = document.createElement("article");
+                    card.classList.add("show-card");
+
+                    card.innerHTML = `
+                        <img src="${imgUr1}" alt="Show image">
+                        <h3>${show.name}</h3>
+                    `;
+                    tv.Results.append(card);
+                    });
+                })
+                .catch(err => console.error(err));
+            });
+
+            const jokeForm = document.getElementById('jokeForm');
+            const jokeResults = document.getElementById('jokeResults');
+
+            jokeForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const searchTerm = document.getElementById('jokeQuery').value.trim();
+                if (!searchTerm) return;
+
+                jokeResults.innerHTML = "";
+
+                fetch("https://api.chucknorris.io/jokes/search?query=${encodeURIComponent(searchTerm)}")
+                    .then(response => response.json())
+                    .then(data => {
+                        data.result.forEach(jokeObj => {
+                            const article = document.createElement("article");
+                            article.innerHTML = `<p>${jokeObj.value}</p>`;
+                            jokeResults.appendChild(article);
+                        });
+
+                        if (data.result.length === 0) {
+                            jokeResults.innerHTML = `<p>No results found.</p>`;
+                            }
+                        })
+                        .catch(error => console.error("Error:", error));
+                });
+</script>
+</body>
+</html>
